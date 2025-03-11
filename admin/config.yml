@@ -1,0 +1,16 @@
+
+collections:
+  - name: "projects"
+    label: "作品项目"
+    folder: "content/projects"
+    create: true
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "分类", name: "tags", widget: "list", 
+         options: ["品牌设计", "UI界面", "视觉创意", "交互设计"]}
+      - {label: "封面图", name: "cover", widget: "image"} 
+      - {label: "作品图片", name: "gallery", widget: "list", 
+         field: {label: "图片", name: "image", widget: "image"}}
+      - {label: "案例视频", name: "video", widget: "string"}
+      - {label: "项目描述", name: "body", widget: "markdown"}
+
